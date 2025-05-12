@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurredbckg"
+    tools:context=".SavingGoalsActivity">
+
+    <!-- NestedScrollView for scrollable content -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/incomeTab"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <!-- Header Text -->
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/audiowide"
+                android:padding="16dp"
+                android:text="Saving Goals"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Motivational Quote -->
+            <TextView
+                android:id="@+id/motivationalQuote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/audiowide"
+                android:padding="16dp"
+                android:text="“Set your goals, secure your future!”"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/headerText" />
+
+            <!-- Current Savings Goals Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/currentGoalsCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="#2E3B3E"
+                app:cardCornerRadius="9dp"
+                app:layout_constraintTop_toBottomOf="@id/motivationalQuote"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current Monthly Savings Goals"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/currentMinGoalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Min: R 0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/currentMaxGoalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Max: R 0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Savings Goals Input Form -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/goalsInputCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="#2E3B3E"
+                app:cardCornerRadius="9dp"
+                app:layout_constraintTop_toBottomOf="@id/currentGoalsCard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <EditText
+                        android:id="@+id/minSavingsEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Minimum Savings Goal (e.g., R 500)"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#B0BEC5" />
+
+                    <EditText
+                        android:id="@+id/maxSavingsEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="Maximum Savings Goal (e.g., R 2000)"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#B0BEC5" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/submitGoalsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#FF5722"
+                        android:text="Submit"
+                        android:textColor="#FFFFFF"
+                        app:cornerRadius="12dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Floating Action Button (Add/Edit Goals) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addGoalsFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Add Savings Goals"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:backgroundTint="#FF5722"
+        app:tint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/incomeTab" />
+
+    <!-- Income Button (Bottom Left) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/incomeTab"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_background"
+        android:fontFamily="@font/audiowide"
+        android:text="Income"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:cornerRadius="12dp"
+        app:elevation="4dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/categoriesTab"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Categories Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/categoriesTab"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_background"
+        android:fontFamily="@font/audiowide"
+        android:text="Categories"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:cornerRadius="12dp"
+        app:elevation="4dp"
+        app:layout_constraintStart_toEndOf="@id/incomeTab"
+        app:layout_constraintEnd_toStartOf="@id/expensesTab"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Expenses Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/expensesTab"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_background"
+        android:fontFamily="@font/audiowide"
+        android:text="Expenses"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:cornerRadius="12dp"
+        app:elevation="4dp"
+        app:layout_constraintStart_toEndOf="@id/categoriesTab"
+        app:layout_constraintEnd_toStartOf="@id/savingGoalsTab"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Saving Goals Button (Bottom Right) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/savingGoalsTab"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_background"
+        android:fontFamily="@font/audiowide"
+        android:text="Savings"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:cornerRadius="12dp"
+        app:elevation="4dp"
+        app:layout_constraintStart_toEndOf="@id/expensesTab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurredbckg"
+    tools:context=".DataExport">
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="384dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/audiowide"
+        android:text="You're about to export your budget data. Here’s what you need to know:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="222dp" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="400dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Format: Your data will be exported as a [CSV/PDF] file."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="304dp" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="395dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Ready to go? Tap Export to download your file"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="597dp" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="358dp"
+        android:layout_height="38dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Been a user since- (09/12/2023)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="396dp"
+        android:layout_height="80dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Privacy: We do not store or share your financial data. This export is for your personal use."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="381dp" />
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="395dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/audiowide"
+        android:text=" Double-check: Ensure everything is correct before proceeding. Changes made after export won’t be included."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="487dp" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="376dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Export and Backup"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#B3AA90"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="67dp"
+        android:layout_height="73dp"
+        android:background="#B2A98F"
+        app:srcCompat="@android:drawable/ic_menu_set_as"
+        tools:layout_editor_absoluteX="328dp"
+        tools:layout_editor_absoluteY="642dp" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="70dp"
+        android:layout_height="85dp"
+        app:srcCompat="@drawable/expbtn"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="73dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

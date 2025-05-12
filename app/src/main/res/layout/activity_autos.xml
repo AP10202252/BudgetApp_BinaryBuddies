@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurredbckg"
+    tools:context=".Autos">
+
+    <Button
+        android:id="@+id/btnLog5"
+        android:layout_width="94dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#09161F"
+        android:fontFamily="@font/audiowide"
+        android:shadowColor="#252424"
+        android:text="Done"
+        android:textColor="#E2BB98"
+        android:textColorHighlight="#FBFAF7"
+        android:textColorHint="#070707"
+        android:textColorLink="#EAE5E1"
+        app:rippleColor="#FCE1C0"
+        app:strokeColor="#FFFDFD"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="672dp" />
+
+    <Button
+        android:id="@+id/btnLog3"
+        android:layout_width="94dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#09161F"
+        android:fontFamily="@font/audiowide"
+        android:shadowColor="#252424"
+        android:text="Back"
+        android:textColor="#E2BB98"
+        android:textColorHighlight="#FBFAF7"
+        android:textColorHint="#070707"
+        android:textColorLink="#EAE5E1"
+        app:rippleColor="#FCE1C0"
+        app:strokeColor="#FFFDFD"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="672dp" />
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="372dp"
+        android:layout_height="67dp"
+        android:fontFamily="@font/audiowide"
+        android:text="- No need to manually save your data."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="372dp"
+        android:layout_height="67dp"
+        android:fontFamily="@font/audiowide"
+        android:text="- Every change you make is instantly saved"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="203dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/audiowide"
+        android:text="How it works:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="273dp"
+        android:layout_height="77dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Auto-Save is ON – Your budget data is automatically saved in real time, so you never lose progress"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="113dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="372dp"
+        android:layout_height="67dp"
+        android:fontFamily="@font/audiowide"
+        android:text="- Works even if you close the app unexpectedly."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="555dp" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Auto Save"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#B3AA90"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/finallgo"
+        tools:layout_editor_absoluteX="296dp"
+        tools:layout_editor_absoluteY="12dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

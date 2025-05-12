@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurredbckg"
+    tools:context=".calculate">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blurredbckg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Page Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/audiowide"
+                android:paddingBottom="8dp"
+                android:text="Savings Calculator"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <!-- Motivational Quote -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/audiowide"
+                android:paddingBottom="16dp"
+                android:text="“Track your income, cut your costs, grow your wealth.”"
+                android:textColor="#B0BEC5"
+                android:textSize="14sp" />
+
+            <!-- Income Input Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp"
+                android:background="#1F2A33"
+                android:backgroundTint="#1F2A33"
+                android:clipToPadding="false"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/audiowide"
+                    android:text="Total Income"
+                    android:textColor="#90A4AE"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/incomeInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/audiowide"
+                    android:hint="e.g. 49900"
+                    android:inputType="numberDecimal"
+                    android:paddingTop="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#607D8B"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- Expenses Input Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="#1F2A33"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/audiowide"
+                    android:text="Total Expenses"
+                    android:textColor="#90A4AE"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/expensesInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/audiowide"
+                    android:hint="e.g. 31000"
+                    android:inputType="numberDecimal"
+                    android:paddingTop="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#607D8B"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- Calculate Button -->
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#00BCD4"
+                android:fontFamily="@font/audiowide"
+                android:text="Calculate Savings"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <!-- Result Display -->
+            <TextView
+                android:id="@+id/savingsResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="#263238"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Your savings will appear here"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurredbckg"
+    tools:context=".Sounds">
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="593dp" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="277dp"
+        android:layout_height="96dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Budget Alerts Sound  Choose a custom sound for budget alerts and notifications."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <Button
+        android:id="@+id/btnLog6"
+        android:layout_width="94dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#09161F"
+        android:fontFamily="@font/audiowide"
+        android:shadowColor="#252424"
+        android:text=">>>"
+        android:textColor="#E2BB98"
+        android:textColorHighlight="#FBFAF7"
+        android:textColorHint="#070707"
+        android:textColorLink="#EAE5E1"
+        app:rippleColor="#FCE1C0"
+        app:strokeColor="#FFFDFD"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="432dp" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="277dp"
+        android:layout_height="96dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Haptics  Enable or disable vibrations for important budget updates."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="556dp" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="273dp"
+        android:layout_height="77dp"
+        android:fontFamily="@font/audiowide"
+        android:text=" Volume Control  Adjust the app’s sound effects and notifications volume."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Sounds and Haptics"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#B3AA90"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="99dp"
+        android:layout_height="79dp"
+        app:srcCompat="@drawable/volbtn"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/finallgo"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/voldown"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/volup"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurredbckg"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Auto saving settings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Data export and Backup"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="174dp" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Add bank account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Help?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="651dp" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Security and Privacy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="551dp" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Update personal details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="439dp" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="431dp"
+        android:layout_height="34dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Sounds, Haptics and vibrations"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Support and about"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="601dp" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Saving and budgetting options"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="Display, preferences"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B2A98F"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="495dp" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="App Settings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#B3AA90"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="58dp"
+        android:layout_height="44dp"
+        app:srcCompat="@drawable/settings"
+        tools:layout_editor_absoluteX="337dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="107dp"
+        android:layout_height="84dp"
+        app:srcCompat="@drawable/mation"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="60dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
