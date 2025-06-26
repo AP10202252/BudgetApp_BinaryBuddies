@@ -5,57 +5,69 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back"
+    android:padding="24dp"
     tools:context=".First">
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp" />
 
     <TextView
         android:id="@+id/Head1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="32dp"
+        android:text="Welcome to SaveMate"
+        android:textSize="24sp"
+        android:textStyle="bold"
         android:fontFamily="@font/audiowide"
-        android:text="Welcome to the Budget App"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#F6D4B2"
+        app:layout_constraintTop_toBottomOf="@id/loadingBar"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="24dp" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="161dp"
-        android:layout_height="127dp"
-        android:layout_marginTop="68dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/Head1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Head1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/finallgo" />
 
     <Button
         android:id="@+id/SignUp"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="392dp"
-        android:backgroundTint="#091720"
-        android:fontFamily="@font/audiowide"
         android:text="Sign Up"
         android:textColor="#D8B796"
+        android:backgroundTint="#0C1A24"
+        android:fontFamily="@font/audiowide"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
 
     <Button
         android:id="@+id/LogIn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="392dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#09161F"
-        android:fontFamily="@font/audiowide"
         android:text="Log In"
-        android:textColor="#EACBA6"
+        android:textColor="#F2D1A6"
+        android:backgroundTint="#0C1A24"
+        android:fontFamily="@font/audiowide"
+        app:layout_constraintTop_toBottomOf="@id/SignUp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-
+        android:layout_marginTop="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

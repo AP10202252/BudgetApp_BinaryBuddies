@@ -20,9 +20,7 @@
         <activity
             android:name=".Autos"
             android:exported="false" />
-        <activity
-            android:name=".options"
-            android:exported="false" />
+
         <activity
             android:name=".DataExport"
             android:exported="false" />
@@ -32,15 +30,11 @@
         <activity
             android:name=".addexpenses"
             android:exported="false" />
-        <activity
-            android:name=".profilepage"
-            android:exported="false" />
+        
         <activity
             android:name=".savinggoals"
             android:exported="false" />
-        <activity
-            android:name=".Profile"
-            android:exported="false" />
+
         <activity
             android:name=".Income"
             android:exported="false" />
@@ -56,9 +50,7 @@
         <activity
             android:name=".addcategory"
             android:exported="false" />
-        <activity
-            android:name=".page2"
-            android:exported="false" />
+
         <activity
             android:name=".Home"
             android:exported="false" />
